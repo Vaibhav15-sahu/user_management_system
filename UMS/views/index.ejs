@@ -1,0 +1,46 @@
+<%- include('partials/_header') %>
+  
+  <nav class="nav-bar">
+    <h1>User Management System</h1>
+  </nav>
+  
+  <div class="user-list">
+      <div class="new-user">
+        <a href="register"><button> + new user </button></a>
+      </div>
+
+    <table>
+      <tr class="labels">
+        <th>Id</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>  
+        <th>Address</th>
+        <th>Action</th>
+      </tr>
+      <% for (let i=1; i<data.length; i++) { %>
+        <tr>
+          <td> 
+            <%= data[i].id %> 
+          </td>
+          <td> <%= data[i].name %> </td>
+          <td> <%= data[i].email %> </td>
+          <td> <%= data[i].phone %> </td>
+          <td>
+            <%= data[i].address %> 
+          </td>
+          <td>
+            <div class="wrap">
+              <a href="update" class="edit-details"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+              <a href="/" class="delete-user" ><i class="fa fa-trash" aria-hidden="true"></i></a>
+            </div>
+          </td>
+        </tr>
+      <%}%>
+    </table>
+  </div>
+
+<%- include('partials/_footer') %>
+ 
+
+

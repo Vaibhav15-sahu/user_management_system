@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+.nav-bar{
+    height: 80px;
+    padding: 20px;
+    background-color: black;
+}
+
+.nav-bar h1{
+    width: 20rem;
+    margin: auto  ;
+    color: white;
+}
+
+.user-list{
+    width: 80dvw;
+    /* height: 100px; */
+    margin: 5rem auto ;
+}
+
+.new-user{
+    margin: 20px 0px;
+}
+
+.new-user button{
+    width: 10rem;
+    height: 3rem;
+    background-color: #242323;
+    color: white;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+button:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 0px solid rgb(66, 65, 65);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.labels{
+    background-color: #3b3b3b;
+    color: white;
+}
+
+td, th {
+    border: 2px solid #242323;
+    text-align: left;
+    padding: 8px;
+}
+
+.wrap{
+    display: flex;
+    width: 60%;
+    margin: 0px auto ;
+    padding: 5px;
+    justify-content: space-between;
+}
+
+.edit-details{
+   position: relative;
+   font-size: 20px;
+   /* left: 20px; */
+   color: rgb(2, 40, 255);
+}
+
+.delete-user{
+    position: relative;
+    font-size: 20px;
+    /* right: 20px; */
+    color: rgb(2, 40, 255);
+}
+
+tr:nth-child(n+2):hover{
+    background-color: #ebebeb;
+}
+
+
+/*   form  */
+
+.title{
+    width: 250px;
+    text-align: center  ;
+    margin: 20px auto;
+    border-bottom: 2px solid #242323;
+    border-bottom-right-radius: 5px;
+}
+
+form{
+    width: 50dvw;
+    margin: 20px auto;
+}
+
+form label{
+    font-size: 20px;
+    margin: 10px 0px;
+}
+
+form input{
+    width: 100%;
+    margin: 20px 0px;
+    border: none;
+    border-bottom: 2px solid #585858;
+}
+
+form input:focus{
+    outline:  none;
+}
+
+.submit{
+    position: relative;
+    border: none;
+    background-color: #242323;
+    color: white;
+    width: 10rem;
+    height: 3rem;
+    float: right;
+    margin: 50px ;
+    border-radius: 8px;
+}
